@@ -1,0 +1,15 @@
+# ignore all class
+*.class
+.classpath
+.project
+.settings
+bin
+build
+target
+*.sublime-*
+/scratch
+.gradle
+README.html
+*.iml
+.idea
+dependency-reduced-pom.xml
