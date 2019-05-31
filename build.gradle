@@ -12,7 +12,8 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath("org.springframework.boot:spring-boot-gradle-plugin:2.1.4.RELEASE")
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:2.1.5.RELEASE")
+        
     }
 }
 
@@ -36,6 +37,13 @@ targetCompatibility = 11.0
 
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")
+    compile ("com.fasterxml.jackson.dataformat:jackson-dataformat-xml")
+    
+    //JPA ; for ORM
+    compile 'org.springframework.boot:spring-boot-starter-data-jpa'
+
+    compile 'mysql:mysql-connector-java'
+   
    	testCompile('org.springframework.boot:spring-boot-starter-test')
    
 }
